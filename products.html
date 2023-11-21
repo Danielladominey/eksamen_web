@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <script src="https://kit.fontawesome.com/c6b659b1d7.js" crossorigin="anonymous"></script>
+        <title>Portefolio</title>
+    </head>
+
+    <body>
+      <div id="grid-container">
+          
+        <header>
+            <nav>
+                <section class="logoheader">
+                    <article>
+                     <a href="index.html"><img src="img/logo1.png" alt="logo"></a>  
+                    </article>
+                </section>
+
+                <section class="listheader">
+                        <a href="index.html">Home</a>
+                        <a href="products.html">Portfolio</a> 
+                        <a href="about.html">About</a> 
+                        <a href="about.html" class="contactbutton">Contact</a>
+                </section>
+            </nav>
+        </header>
+
+        <main class="mainproducts">
+            <section class="section1index">
+                <img class="bakgrunn2" src="img/bakgrunn5.jpg" alt="foto">
+                <section class="overlay-text">
+                <h1>Portefolio</h1>
+             </section>
+            </section>
+
+            <section class="section2portefolio">
+                <h2>Explore previous jobs</h2>
+                <hr class="hryellow">
+                <button class="buttonportefolio">Branding</button> 
+                <button class="buttonportefolio">Design</button>
+                <button class="buttonportefolio">Development</button>
+            </section>
+
+            <section class="section2portefolio">
+                <h3>Branding</h3>
+                <hr>
+                <article>
+                    <img src="img/400x400.svg" class="portefoliopic" alt="placeholder">
+                    <h4 class="portefolioh4">Et harum quidem</h4>
+                </article>
+                <article>
+                    <img src="img/400x400.svg" class="portefoliopic" alt="placeholder">
+                    <h4 class="portefolioh4">Et harum quidem</h4>
+                </article>
+                <article>
+                    <img src="img/400x400.svg" class="portefoliopic" alt="placeholder">
+                    <h4 class="portefolioh4">Et harum quidem</h4>
+                </article>
+                <article>
+                    <img src="img/400x400.svg" class="portefoliopic" alt="placeholder">
+                    <h4 class="portefolioh4">Et harum quidem</h4>
+                </article>
+            </section>
+
+            <section class="section3portefolio">
+                <h3>Design</h3>
+                <hr>
+                <article>
+                    <img src="img/400x400.svg" class="portefoliopic" alt="placeholder">
+                    <h4 class="portefolioh4">Et harum quidem</h4>
+                </article>
+                <article>
+                    <img src="img/400x400.svg" class="portefoliopic" alt="placeholder">
+                    <h4 class="portefolioh4">Et harum quidem</h4>
+                </article>
+                <article>
+                    <img src="img/400x400.svg" class="portefoliopic" alt="placeholder">
+                    <h4 class="portefolioh4">Et harum quidem</h4>
+                </article>
+            </section>
+
+            <section class="section4portefolio">
+                <h3>Development</h3>
+                <hr>
+                <article>
+                    <img src="img/400x400.svg" class="portefoliopic" alt="placeholder">
+                    <h4 class="portefolioh4">Et harum quidem</h4>
+                </article>
+                <article>
+                    <img src="img/400x400.svg" class="portefoliopic" alt="placeholder">
+                    <h4 class="portefolioh4">Et harum quidem</h4>
+                </article>
+            </section>
+        </main>
+
+
+        <footer>
+            <section class="footer1">
+                <article>
+                    <img src="img/logo1.png" alt="logo">
+                    <h6>Companyrights Companyname 2023</h6>
+                </article>
+            </section>
+            <section class="footer2">
+                <i class="fa-brands fa-square-facebook" style="color: #0a0a0a;"></i>
+                <i class="fa-brands fa-instagram" style="color: #000000;"></i>
+                <i class="fa-brands fa-linkedin-in" style="color: #000000;"></i>
+            </section>
+        </footer>
+
+        <button id="backToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i></button>
+
+        <script>
+            
+            function scrollToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0; 
+            }
+    
+          
+            window.onscroll = function () {
+                showBackToTopButton();
+            };
+    
+            function showBackToTopButton() {
+                var button = document.getElementById("backToTopBtn");
+    
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    button.style.display = "block";
+                } else {
+                    button.style.display = "none";
+                }
+            }
+        </script>
+    
+      </div>
+    </body>
+
+
+</html>
