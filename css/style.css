@@ -10,6 +10,7 @@ body{
 }
 
 header{
+    grid-area: nav;
     padding-top: 10px;
     display: flex;
     justify-content: center;
@@ -27,16 +28,26 @@ header{
     color: black;
 }
 
+.active{
+    font-weight: bold;
+    text-decoration: underline #e6bd43;
+}
+
 .listheader a:hover {
     text-decoration: underline #e6bd43;
 }
 
 main{
+    grid-area: main;
     display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: column;
     padding: 0;
+}
+
+video{
+    display: none;
 }
 
 .contactbutton{
@@ -56,12 +67,40 @@ main{
     font-size: 15px;
 }
 
+.buttonindex{
+    border: 2px solid #000;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    background-color: #e6bd43;
+    display: inline-block;
+    color: black;
+    cursor: pointer;
+}
+
+.buttonindex:hover{
+    background-color: #252525;
+    color: #e6bd43;
+
+}
+
+
 .buttonportefolio{
     border: 2px solid #000;
+    text-decoration: none;
     font-size: 20px;
     padding: 5%;
     margin: 5%;
     background-color: #fff;
+    display: inline-block;
+    color: black;
+    cursor: pointer;
+}
+
+.buttonportefolio:hover{
+    background-color: #252525;
+    color: #e6bd43;
+
 }
 
 .section1index {
@@ -69,6 +108,10 @@ main{
 }
 
 h1{
+    font-size: 30px;
+}
+
+h3{
     font-size: 30px;
 }
 
@@ -80,20 +123,24 @@ h1{
 }
 
 .bakgrunn2{
-    width: 100%;
-    height: auto;
-    opacity: 50%;
+    width: max-content;
     height: 400px;
+    opacity: 50%;
 }
 
-.overlay-text {
+.bakgrunn3{
+    width: 650px;
+    height: 1000px;
+}
+
+.overlay-text-portofolio{
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     color:black;
-    
 }
+
 
 .overlay-text-about{
     position: absolute;
@@ -104,6 +151,15 @@ h1{
     background-color: rgba(255, 255, 255, 0.8); 
     padding-bottom: 5%;
 }
+
+.overlay-text-index{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:black;
+}
+
 
 .section2index{
     margin: 4rem;
@@ -145,8 +201,7 @@ h1{
 .textcontact5{
     font-size: 30px;
     margin: 4.5rem;
-    width: fit-content;
-    
+    width: fit-content;   
 }
 
 
@@ -155,6 +210,7 @@ h1{
     display: flex;
     flex-direction: row; 
     justify-content: space-between; 
+    justify-content: center;
     flex-wrap: wrap;
     margin: 3rem;
 }
@@ -196,7 +252,6 @@ h1{
 
 .sign1{
     background-color: #c4c2c2;
-    width: 400px;
     border-radius: 0;
 }
 .signmeup{
@@ -230,6 +285,13 @@ h1{
     margin-bottom: 0;
 }
 
+.section4portefolio{
+    text-align: left;
+    margin: 3rem;
+    padding-bottom: 0%;
+    margin-bottom: 0;
+}
+
 .portefoliopic{
     max-width: 350px;
     min-width: 200px;
@@ -251,7 +313,7 @@ form {
     text-align: left;
     background-color: #f1f1f1;
     padding: 20px;
-    width: 500px;
+    width: 400px;
     margin: 3rem;
     padding-top: 0;
 }
@@ -282,6 +344,7 @@ input[type="submit"] {
 }
 
 footer{
+    grid-area: footer;
     height: 330px;
     background-color: #252525;
     display: flex;
@@ -336,4 +399,427 @@ h6{
     font-weight: 400;
 }
 
+@media only screen and (min-width: 600px) {
+    #grid-container {
+        grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
+        columns: 1fr 1fr 1fr;
+    }
+
+    .header {
+        grid-column: 1 / span 3;
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    body{
+        margin: 1rem;
+    }
+
+    .logoheader{
+        float: left;
+        width: 75px;
+        margin: 10px;
+    }
+    
+    .listheader {
+        font-size: 20px;
+        margin: 20px;
+        float: right;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap; 
+    }
+
+    .contactbutton{
+        font-size: 20px;
+        padding: 0;
+    }
+
    
+
+    .contactbutton:hover {
+        background-color: #252525; 
+        color: #e6bd43; 
+    }
+    
+    .listheader a {
+        flex: 1; 
+        max-width: 100px; 
+        text-decoration: none;
+        margin: 10px;
+        color: black;
+    }
+
+    .bakgrunn1{
+        display: none;
+    }
+
+    main{
+        grid-column: 1 / span 3;
+    }
+
+    .video-containter{
+        width: 100%;
+        height: 70%;
+        overflow: hidden;
+    }
+
+    video{
+        display: inline;
+        opacity: 55%;
+        overflow: hidden;
+    }
+
+   
+    .video-frame {
+        width: 100%;
+        height: auto;
+        object-fit: cover; 
+    }
+    
+    h1{
+        font-size: 35px;
+        font-weight: 800;
+    }
+    .overlay-text {
+        top: 35%;
+        left: 70%;
+        width: 85%;
+    }
+
+    
+    .overlay-text-about{
+        top: 50%;
+        left: 62%;
+        width: 65%;
+        text-align: left;
+        padding: 10px;
+        padding-left: 20px;
+        padding-top: 0;
+    }
+
+    .companyname{
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .bakgrunn3{
+        width: 100%;
+        height: 500px;
+    }
+
+
+    .flexcontainer-section3about{
+        margin: 0;
+    }
+
+    .logoabout{
+        width: 175px;
+        margin: 15px;
+    }
+
+    
+    .flexcontainer-about4{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .textcontact5{
+        padding-top: 3%;
+        text-align: left;
+        width: 300px;
+        margin: 20px;
+        font-size: 20px;
+    }
+
+    .sendusamessage{
+        font-size: 20px;
+    }
+
+
+    .contactbutton2{
+        font-weight: 700;
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    .contactbutton2:hover {
+        background-color: #252525; 
+        color: #e6bd43; 
+    }
+
+    .section2index{
+        margin-top: -120px;
+    }
+
+    h2{
+        font-size: 30px;
+        margin-bottom: 5%;
+    }
+
+    .section3index{
+        justify-content: left;
+        display: flex;
+    }
+
+    .section3text{
+        margin: 0;
+        text-align: start;
+        padding: 0;
+        margin: 1rem;
+    
+    }
+
+    .placeholder{
+        flex-grow: 1;
+        width: 30%;
+        max-width: 110%;
+    }
+    .section4index {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    h3 {
+        margin-bottom: 20px;
+    }
+    
+    .service-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .service {
+        width: 150px;
+        margin: 15px;
+        text-align: center;
+        
+    }
+
+    .fa-solid.fa-people-line{
+        font-size: 30px;
+        padding-top:  5%;
+    }
+    
+    .fa-solid.fa-cloud-arrow-up{
+        font-size: 40px;
+        padding-top: 5%;
+    }
+    
+    .fa-solid.fa-code{
+        font-size: 30px;
+        padding-top:5%;
+    }
+    
+    .fa-solid.fa-wifi{
+        font-size: 30px;
+        padding-top:5%;
+    }
+
+    
+    .buttonsignmeup{
+        background-color: #e6bd43;
+        height: 55px;
+        border: none;
+    }
+
+    .buttonsignmeup:hover {
+        background-color: #252525; 
+        color: #e6bd43; 
+    }
+    
+    #email{
+        height: 35px;
+        width: 300px;
+        border: none;
+        border-radius: 0;
+    }
+
+    .buttonportefolio{
+        border: 2px solid #000;
+        font-size: 20px;
+        margin: 0;
+        margin-right: 10px;
+        background-color: #fff;
+        padding: 10px;
+    }
+
+    .bakgrunn2{
+        width: 100%;
+    }
+
+    .overlay-text-portofolio{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color:black;
+    }
+
+    .overlay-text-index{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color:black;
+    }
+
+    .section2portefolio{
+        margin: 0;
+    }
+
+    .portefolioflex{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .portefolioflex2{
+        display: flex;
+        justify-content: space-between
+       }
+
+
+    .portefoliopic1{
+        flex-grow: 1;
+        max-width: 692px; 
+        width:95%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .portefoliopic1:hover {
+        transform: scale(1.1); 
+    }
+
+    .portefoliopic4{
+        flex-grow: 1;
+        max-width: 692px;
+        width: 35%;
+        transition: transform 0.3s ease-in-out;
+
+    }
+    .portefoliopic4:hover {
+        transform: scale(1.1); 
+    }
+
+    .section3portefolio{
+        margin: 0;
+    }
+
+    .section4portefolio{
+        margin: 0;
+        text-align: start;
+    }
+
+    .portefoliopic5{
+        flex-grow: 1;
+        max-width: 120%;
+        width: 90%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .portefoliopic5:hover {
+        transform: scale(1.1); 
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+
+    footer{
+        grid-column: 1 / span 3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 150px;
+    }
+
+    .footer2{
+        width: 200px;
+    }
+
+    .footerlogo{
+        margin: 10px;
+        width: 75px;
+        height: 75px;
+    }
+    
+    h6{
+        width: 400px;
+        padding-left: 30px;
+    }
+    
+}
+
+@media only screen and (min-width: 800px) {
+    #grid-container {
+        grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
+        columns: 1fr 1fr 1fr;
+    }
+
+    h1{
+        font-size: 45px;
+    }
+
+    .overlay-text-index p{
+        font-size: 20px;
+    }
+
+    .section2index h2{
+        font-size: 35px;
+    }
+
+    .section2index p{
+        font-size: 20px;
+    }
+
+    .section3text p{
+        font-size: 20px;
+    }
+
+    .service-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+
+    form.sign1{
+        display: flex;
+        width: 90%;
+        justify-content: center;
+    }
+
+    #email{
+        height: 35px;
+        width: 600px;
+        border: none;
+        border-radius: 0;
+    }
+
+    .portefolioflex2{
+        justify-content: space-between;
+    }
+
+    .portefoliopic5{
+        flex-grow: 1;
+        max-width: 692px;
+        width: 500px;
+        transition: transform 0.3s ease-in-out;
+        
+    }
+    
+   
+
+   
+}

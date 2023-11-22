@@ -15,9 +15,9 @@
           
         <header>
             <nav>
-                <section class="logoheader">
+                <section>
                     <article>
-                     <a href="index.html"><img src="img/logo1.png" alt="logo"></a>  
+                     <a href="index.html"><img src="img/logo1.png" class="logoheader" alt="logo"></a>  
                     </article>
                 </section>
 
@@ -32,12 +32,12 @@
 
         <main>
             <section class="section1index">
-                <img class="bakgrunn3" src="img/bakgrunn5.jpg" alt="foto">
+                <img class="bakgrunn3" src="img/pexels-photo-234527.jpeg" alt="foto">
                 <section class="overlay-text-about">
-                <h1>Company Name</h1>
+                <h1 class="companyname">Company Name</h1>
 
                 <h2>About our company</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturSed sapien nisi, viverra ut ornare et, finibus sed eros. Morbi placerat odio ex, quis accumsan mauris bibendum eu. Curabitur vel tellus at ipsum vestibulum interdum. Duis vulputate, mauris sed vestibulum consequat, elit dolor semper odio, sit amet cursus mauris leo vitae nisi. Nullam vitae nunc efficitur, interdum justo eu, ornare diam. Proin vel tincidunt sem, vel ultricies libero. Curabitur convallis quam libero, eget dapibus arcu condimentum at. Praesent hendrerit ligula ut eros gravida, hendrerit placerat turpis rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis feugiat ipsum quis aliquam fringilla. Aenean bibendum sapien et viverra faucibus. Cras viverra congue auctor. Nullam interdum porttitor mi, quis pharetra felis accumsan condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ultrices libero eu aliquam placerat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturSed sapien nisi, viverra ut ornare et, finibus sed eros. Morbi placerat odio ex, quis accumsan mauris bibendum eu. Curabitur vel tellus at ipsum vestibulum interdum. Duis vulputate, mauris sed vestibulum consequat, elit dolor semper odio, sit amet cursus mauris leo vitae nisi. Nullam vitae nunc efficitur, interdum justo eu, ornare diam. Proin vel tincidunt sem, vel ultricies libero. Duis feugiat ipsum quis aliquam fringilla. Aenean bibendum sapien et viverra faucibus.</p>
                 <button class="contactbutton2">Get in touch with us</button>
              </section>
             </section>
@@ -46,19 +46,36 @@
             <section class="section2about">
                 <h3>Our Services</h3>
 
-                <i class="fa-solid fa-people-line" style="color: #000000;"></i>
-                <h4>Branding</h4>
-                <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
-                <i class="fa-solid fa-cloud-arrow-up" style="color: #000000;"></i>
-                <h4>Branding</h4>
-                <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
-                <i class="fa-solid fa-code" style="color: #000000;"></i>
-                <h4>Branding</h4>
-                <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
-                <i class="fa-solid fa-wifi" style="color: #000000;"></i>
-                <h4>Branding</h4>
-                <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+               
+                <section class="service-container">
+                    <element class="service">
+                    <i class="fa-solid fa-people-line" style="color: #000000;"></i>
+                    <h4>Branding</h5>
+                    <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+                </element>
+
+                <element class="service">
+                    <i class="fa-solid fa-cloud-arrow-up" style="color: #000000;"></i>
+                    <h4>Branding</h5>
+                    <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+                </element>
+
+                <element class="service">
+                    <i class="fa-solid fa-code" style="color: #000000;"></i>
+                    <h4>Branding</h5>
+                    <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+                </element>
+
+
+                <element class="service">
+                    <i class="fa-solid fa-wifi" style="color: #000000;"></i>
+                    <h4>Branding</h5>
+                    <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+                </element>
+             </section>
+
             </section>
+
 
             <section class="section3about">
                 <h3>Some of our clients</h3>
@@ -69,20 +86,23 @@
                 <article>
                     <img src="img/logo2.png" class="logoabout" alt="logo2">
                 </article>
-            </section>
+           
                 <article>
                     <img src="img/logo3.png" class="logoabout" alt="logo3">
                 </article>
+             </section>
             
             </section>
 
             <section class="section4about">
                 <h3>Contact us</h3>
+        
 
-
-                <h4>Send us a message</h4>
-                <form action="process_form.php" method="post" >
-                  
+                
+                <section class="flexcontainer-about4">
+                    
+                    <form action="process_form.php" method="post" class="form-about">
+                    <h4 class="sendusamessage">Send us a message</h4>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
             
@@ -97,35 +117,33 @@
                     
                     <input type="submit" value="Send message">
                 </form>
+
+                <section class="textcontact5">
+                    <h4>Contact information</h4>
+                    <p>Donec pretium dui in magna sollicitudin tincidunt. Fusce felis purus, tristique ultricies pretium ut, malesuada tincidunt risus. Ut in aliquam arcu. </p>
+                    <p><i class="fa-solid fa-location-dot fa-xs" style="color: #000000;"></i> B R A Veien 4, 1757 Halden</p>
+                    <p><i class="fa-solid fa-phone fa-xs" style="color: #000000;"></i> 69 60 80 00</p>
+                    <p><i class="fa-solid fa-envelope fa-xs" style="color: #000000;"></i> postmottak@hiof.no</p>
+                </section>
+                </section>
             </section>
 
-            <section class="section5about">
-                <section class="textcontact5">
-                <h4>Contact information</h4>
-                <p>Donec pretium dui in magna sollicitudin tincidunt. Fusce felis purus, tristique ultricies pretium ut, malesuada tincidunt risus. Ut in aliquam arcu. </p>
-                <p><i class="fa-solid fa-location-dot fa-xs" style="color: #000000;"></i> B R A Veien 4, 1757 Halden</p>
-                <p><i class="fa-solid fa-phone fa-xs" style="color: #000000;"></i> 69 60 80 00</p>
-                <p><i class="fa-solid fa-envelope fa-xs" style="color: #000000;"></i> postmottak@hiof.no</p>
-            </section>
-            </section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882765433659!2d11.350228376426351!3d59.12925022702081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1700492568542!5m2!1sno!2sno" width="640" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </main>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882765433659!2d11.350228376426351!3d59.12925022702081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1700492568542!5m2!1sno!2sno" width="640" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-
+    
         <footer>
             <section class="footer1">
                 <article>
-                    <img src="img/logo1.png" alt="logo">
-                    <h6>Companyrights Companyname 2023</h6>
+                    <img class="footerlogo" src="img/logo1.png" alt="logo">
                 </article>
             </section>
+            <h6>Companyrights Companyname 2023</h6>
             <section class="footer2">
                 <i class="fa-brands fa-square-facebook" style="color: #0a0a0a;"></i>
                 <i class="fa-brands fa-instagram" style="color: #000000;"></i>
                 <i class="fa-brands fa-linkedin-in" style="color: #000000;"></i>
             </section>
-
         </footer>
 
         
