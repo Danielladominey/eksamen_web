@@ -1,155 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-         <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <meta name="description" content="">
-         <link rel="stylesheet" href="css/style.css" type="text/css">
-         <script src="https://kit.fontawesome.com/c6b659b1d7.js" crossorigin="anonymous"></script>
-         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-         <title>About</title>
+        
+        <!-- Basic meta -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Take a look at my portefolio and get your ideas here.">
+        <meta name="author" content="Daniella Dominey">
+        <meta name="keywords" content="About, contact, info, webdesign, portefolio">
+        <meta name="robots" content="about, follow">
+        
+        <!-- Open Graph tags for Facebook and Instagram -->
+        <meta property="og:title" content="Contact details">
+        <meta property="og:description" content="Contact me for help with your webdesign today!">
+        <meta property="og:image" content="url-to-your-thumbnail-image.jpg">
+        <meta property="og:url" content="https://daniellaswebdesign/about.com">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="nb_NO">
+    
+        <!-- LinkedIn meta tags -->
+        <meta property="title" content="Contact details">
+        <meta property="description" content="Contact me for help with your webdesign today! ">
+        <meta property="image" content="url-to-your-thumbnail-image.jpg">
+        <meta property="url" content="https://daniellaswebdesign/about.com">
+        <meta property="type" content="website">
+        <meta property="locale" content="nb_NO">
+        <meta property="site_name" content="DaniellasWebdesign/about">
+    
+       
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <script src="https://kit.fontawesome.com/c6b659b1d7.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="img/favicon.ico.png" type="image/x-icon">
+        <link rel="shortcut icon" href="img/favicon.ico.png" type="image/x-icon">
+        <title>DaniellasWebdesign/</title>
 
     </head>
     <body>
       <div id="grid-container">
-          
+
+       <!-- HEADER -->
+
         <header>
             <nav>
                 <section>
                     <article>
-                     <a href="index.html"><img src="img/logo1.png" class="logoheader" alt="logo"></a>  
+                        <a href="index.html" tabindex="1" title="Go to Home"><img src="img/logo1.png" class="logoheader" alt="logo"></a>
                     </article>
                 </section>
 
-                <section class="listheader">
-                        <a href="index.html">Home</a>
-                        <a href="products.html">Portfolio</a> 
-                        <a href="about.html">About</a> 
-                        <a href="about.html" class= contactbutton>Contact</a>
+                <section class="listheader" role="navigation">
+                    <a href="index.html" tabindex="2" aria-label="Home">Home</a>
+                    <a href="products.html" tabindex="3" aria-label="Portfolio">Portfolio</a>
+                    <a href="about.html" class="active" tabindex="4" aria-label="About">About</a>
+                    <a href="#contact" class="contactbutton" tabindex="5" aria-label="Contact">Contact</a>
                 </section>
             </nav>
         </header>
 
-        <main>
-            <section class="section1index">
-                <img class="bakgrunn3" src="img/pexels-photo-234527.jpeg" alt="foto">
-                <section class="overlay-text-about">
-                <h1 class="companyname">Company Name</h1>
-
-                <h2>About our company</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturSed sapien nisi, viverra ut ornare et, finibus sed eros. Morbi placerat odio ex, quis accumsan mauris bibendum eu. Curabitur vel tellus at ipsum vestibulum interdum. Duis vulputate, mauris sed vestibulum consequat, elit dolor semper odio, sit amet cursus mauris leo vitae nisi. Nullam vitae nunc efficitur, interdum justo eu, ornare diam. Proin vel tincidunt sem, vel ultricies libero. Duis feugiat ipsum quis aliquam fringilla. Aenean bibendum sapien et viverra faucibus.</p>
-                <button class="contactbutton2">Get in touch with us</button>
-             </section>
-            </section>
-           
-
-            <section class="section2about">
-                <h3>Our Services</h3>
-
-               
-                <section class="service-container">
-                    <element class="service">
-                    <i class="fa-solid fa-people-line" style="color: #000000;"></i>
-                    <h4>Branding</h5>
-                    <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
-                </element>
-
-                <element class="service">
-                    <i class="fa-solid fa-cloud-arrow-up" style="color: #000000;"></i>
-                    <h4>Branding</h5>
-                    <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
-                </element>
-
-                <element class="service">
-                    <i class="fa-solid fa-code" style="color: #000000;"></i>
-                    <h4>Branding</h5>
-                    <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
-                </element>
-
-
-                <element class="service">
-                    <i class="fa-solid fa-wifi" style="color: #000000;"></i>
-                    <h4>Branding</h5>
-                    <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
-                </element>
-             </section>
-
-            </section>
-
-
-            <section class="section3about">
-                <h3>Some of our clients</h3>
-                <section class="flexcontainer-section3about">
-                <article>
-                    <img src="img/logo1.png" class="logoabout" alt="logo">
-                </article>
-                <article>
-                    <img src="img/logo2.png" class="logoabout" alt="logo2">
-                </article>
-           
-                <article>
-                    <img src="img/logo3.png" class="logoabout" alt="logo3">
-                </article>
-             </section>
-            
-            </section>
-
-            <section class="section4about">
-                <h3>Contact us</h3>
+        <!-- MAIN -->
+        <!-- Kilde til bilde som er brukt i main section 1: https://images.pexels.com/photos/234527/pexels-photo-234527.jpeg?cs=srgb&dl=pexels-j%C3%A9shoots-234527.jpg&fm=jpg&h=975&w=1550&fit=crop&_gl=1*1p7j74s*_ga*OTUwNDQ2MTExLjE3MDA2NzUxNTc.*_ga_8JE65Q40S6*MTcwMDY3NTE1OC4xLjEuMTcwMDY3NTMxNi4wLjAuMA.. \-->
         
+        <main>
+            <div itemscope itemtype="https://schema.org/LocalBusiness">
+                <meta itemprop="name" content="About">
+                <section class="section1index" aria-labelledby="aboutCompanyHeading">
+                    <img class="bakgrunn3" src="img/pexels-photo-234527.jpeg" alt="foto" itemprop="image">
+                    <section class="overlay-text-about">
+                        <h1 id="aboutCompanyHeading" class="companyname">Company Name</h1>
+    
+                        <h2 class="aboutourcompany">About our company</h2>
+                        <p itemprop="description">Dum dolore eu fugiat nulla pariaturSed sapien nisi, viverra ut ornare et, finibus sed eros. Morbi
+                            placerat odio ex, quis accumsan mauris bibendum eu. Curabitur vel tellus at ipsum vestibulum
+                            interdum. Duis vulputate, mauris sed vestibulum consequat, elit dolor semper odio, sit amet cursus
+                            mauris leo vitae nisi. Nullam vitae nunc efficitur, interdum justo eu, ornare diam. Proin vel
+                            tincidunt sem, vel ultricies libero.</p>
+                        <a href="#contact" class="readmore-button" tabindex="6" aria-label="Read more about the company">Get
+                            in touch with us</a>
+                    </section>
+                 </section>
+               
+    
+                  <section class="section2about" aria-labelledby="ourServicesHeading">
+                    <h3 id="ourServicesHeading">Our Services</h3>
+    
+                    <section class="service-container">
+                        <article class="service">
+                            <i class="fa-solid fa-people-line" style="color: #000000;"></i>
+                            <h4>Branding</h4>
+                            <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+                        </article>
+    
+                        <article class="service">
+                            <i class="fa-solid fa-cloud-arrow-up" style="color: #000000;"></i>
+                            <h4>Branding</h4>
+                            <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+                        </article>
+    
+                        <article class="service">
+                            <i class="fa-solid fa-code" style="color: #000000;"></i>
+                            <h4>Branding</h4>
+                            <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+                        </article>
+    
+                        <article class="service">
+                            <i class="fa-solid fa-wifi" style="color: #000000;"></i>
+                            <h4>Branding</h4>
+                            <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+                        </article>
+                    </section>
+                 </section>
+    
+    
+                 <section class="section3about" aria-labelledby="clientsHeading">
+                    <h3 id="clientsHeading">Some of our clients</h3>
+                    <section class="flexcontainer-section3about">
+                        <article>
+                            <img src="img/logo1.png" class="logoabout" alt="logo">
+                        </article>
+                        <article>
+                            <img src="img/logo2.png" class="logoabout" alt="logo2">
+                        </article>
+                        <article>
+                            <img src="img/logo3.png" class="logoabout" alt="logo3">
+                        </article>
+                    </section>
+                 </section>
+    
+    
+                    <section class="section4about" aria-labelledby="contactHeading">
+                        <h3 id="contactHeading">Contact us</h3>
+        
+                        <section class="flexcontainer-about4" id="contact">
+                            <form action="process_form.php" method="post" class="form-about">
+                                <h4 class="sendusamessage">Send us a message</h4>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required tabindex="7">
+        
+                                <label for="subject">Subject:</label>
+                                <input type="text" id="subject" name="subject" required tabindex="8">
+        
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" rows="4" required tabindex="9"></textarea>
+        
+                                <input type="submit" value="Send message">
+                            </form>
+        
+        
+                        <section class="textcontact5">
+                            <h4 class="">Contact information</h4>
+                            <p>Donec pretium dui in magna sollicitudin tincidunt. Fusce felis purus, tristique ultricies pretium ut, malesuada tincidunt risus. Ut in aliquam arcu. </p>
+                            <p itemprop="address"><i class="fa-solid fa-location-dot fa-xs" style="color: #000000;"></i> B R A Veien 4, 1757 Halden</p>
+                            <p itemprop="telephone"><i class="fa-solid fa-phone fa-xs" style="color: #000000;"></i> 69 60 80 00</p>
+                            <p itemprop="email"><i class="fa-solid fa-envelope fa-xs" style="color: #000000;"></i> postmottak@hiof.no</p>
+                        </section>
+                        </section>
+                    </section>
 
-                
-                <section class="flexcontainer-about4">
-                    
-                    <form action="process_form.php" method="post" class="form-about">
-                    <h4 class="sendusamessage">Send us a message</h4>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-            
-                   
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" required>
-            
-                   
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-            
-                    
-                    <input type="submit" value="Send message">
-                </form>
-
-                <section class="textcontact5">
-                    <h4>Contact information</h4>
-                    <p>Donec pretium dui in magna sollicitudin tincidunt. Fusce felis purus, tristique ultricies pretium ut, malesuada tincidunt risus. Ut in aliquam arcu. </p>
-                    <p><i class="fa-solid fa-location-dot fa-xs" style="color: #000000;"></i> B R A Veien 4, 1757 Halden</p>
-                    <p><i class="fa-solid fa-phone fa-xs" style="color: #000000;"></i> 69 60 80 00</p>
-                    <p><i class="fa-solid fa-envelope fa-xs" style="color: #000000;"></i> postmottak@hiof.no</p>
-                </section>
-                </section>
-            </section>
-
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882765433659!2d11.350228376426351!3d59.12925022702081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1700492568542!5m2!1sno!2sno" width="640" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- Brukt ChatGPT til å finne ut hvordan man legger inn kart. https://chat.openai.com/ -->
+        
+                    <iframe itemprop="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882765433659!2d11.350228376426351!3d59.12925022702081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1700492568542!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Location Map"></iframe>
+                </div>   
         </main>
 
-    
+        <!-- FOOTER -->
+
         <footer>
             <section class="footer1">
-                <article>
-                    <img class="footerlogo" src="img/logo1.png" alt="logo">
-                </article>
+            <article>
+            <img class="footerlogo" src="img/logo1.png" alt="logo">
+            </article>
             </section>
+            
             <h6>Companyrights Companyname 2023</h6>
+            
             <section class="footer2">
-                <i class="fa-brands fa-square-facebook" style="color: #0a0a0a;"></i>
-                <i class="fa-brands fa-instagram" style="color: #000000;"></i>
-                <i class="fa-brands fa-linkedin-in" style="color: #000000;"></i>
+            <a href="https://www.facebook.com/yourFacebookPage" target="_blank" aria-label="Facebook">
+            <i class="fa-brands fa-square-facebook" style="color: #0a0a0a;"></i>
+            </a>
+            
+            <a href="https://www.instagram.com/yourInstagramUsername" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram" style="color: #000000;"></i>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/yourLinkedInUsername" target="_blank" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in" style="color: #000000;"></i>
+            </a>
             </section>
         </footer>
 
-        
-
         <button id="backToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i></button>
 
+
+        <!--SCRIPT-->
+        <!-- Brukt ChatGPT til å finne ut hvordan man til scroll knapp https://chat.openai.com/ -->
+        
         <script>
             
             function scrollToTop() {

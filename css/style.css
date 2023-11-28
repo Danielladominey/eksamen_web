@@ -5,7 +5,8 @@
 }
 
 body{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1600px;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
 
@@ -21,20 +22,17 @@ header{
     text-align: center;
 }
 
+.listheader a.active{
+    text-decoration: underline #e6bd43;
+    font-weight: bold;
+
+}
+
 .listheader a {
     display: block; 
     text-decoration: none;
     margin: 10px;
     color: black;
-}
-
-.active{
-    font-weight: bold;
-    text-decoration: underline #e6bd43;
-}
-
-.listheader a:hover {
-    text-decoration: underline #e6bd43;
 }
 
 main{
@@ -56,39 +54,28 @@ video{
     font-weight: 700;
     padding: 10%;
     font-size: 15px;
+    text-decoration: none;
+    color: #000;
 }
 
-.contactbutton2{
-    background-color: #e6bd43;
-    border: none;
-    text-align: start;
-    font-weight: 700;
-    padding: 10%;
-    font-size: 15px;
-}
 
 .buttonindex{
     border: 2px solid #000;
     text-decoration: none;
-    font-size: 20px;
-    padding: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px;
     background-color: #e6bd43;
     display: inline-block;
     color: black;
     cursor: pointer;
 }
 
-.buttonindex:hover{
-    background-color: #252525;
-    color: #e6bd43;
-
-}
-
 
 .buttonportefolio{
     border: 2px solid #000;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     padding: 5%;
     margin: 5%;
     background-color: #fff;
@@ -97,9 +84,22 @@ video{
     cursor: pointer;
 }
 
-.buttonportefolio:hover{
-    background-color: #252525;
-    color: #e6bd43;
+.readmore-button{
+    background-color: #e6bd43;
+    border: none;
+    font-weight: 700;
+    padding: 5%;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000;
+    width:fit-content;
+}
+
+.contactbutton3{
+    border: 3px solid #000;
+    background-color: #e6bd43;
+    font-size: 15px;
+    padding: 5px;
 
 }
 
@@ -111,15 +111,24 @@ h1{
     font-size: 30px;
 }
 
+
 h3{
-    font-size: 30px;
+    font-size: 25px;
+    padding-bottom: 5%;
+    padding-top: 10%;
+    margin: 0;
+}
+
+h4{
+    font-weight: 750;
+    font-size: 20px;
 }
 
 .bakgrunn1 {
     width: 100%;
     height: auto;
     opacity: 50%;
-    height: 500px;
+    height: 400px;
 }
 
 .bakgrunn2{
@@ -129,8 +138,8 @@ h3{
 }
 
 .bakgrunn3{
-    width: 650px;
-    height: 1000px;
+    width: 100%;
+    height: 650px;
 }
 
 .overlay-text-portofolio{
@@ -150,31 +159,64 @@ h3{
     color:black;
     background-color: rgba(255, 255, 255, 0.8); 
     padding-bottom: 5%;
+    height: 60%;
+    width: 65%;
+}
+
+.overlay-text-about p{
+    margin-bottom: 9%;
+    padding: 15px;
 }
 
 .overlay-text-index{
     position: absolute;
     top: 45%;
+    width: 300px;
     left: 50%;
     transform: translate(-50%, -50%);
     color:black;
 }
 
+.overlay-text-index p{
+    margin-bottom: 10%;
+}
+
+.companyname{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.aboutourcompany{
+    margin: 0;
+    font-size: 25px;
+}
+
 
 .section2index{
     margin: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .section3index{
     background-color: #e6bd43;
+    text-align: start;
 }
 
 .placeholder{
-    margin: 3rem;
+    width: 250px;
+    padding: 2rem;
+
+}
+
+#divhide{
+    display: none;
 }
 
 .section3text{
-    margin: 3rem;
+    margin: 1rem;
     text-align: start;
     padding-right: 30%;
     padding-left: 10%;
@@ -186,6 +228,9 @@ h3{
 
 .section2about{
     background-color: #f1f1f1;
+    padding: 5%;
+    padding-left: 10%;
+    padding-right: 10%;;
 }
 
 .section4about{
@@ -200,7 +245,7 @@ h3{
 
 .textcontact5{
     font-size: 30px;
-    margin: 4.5rem;
+    margin: 3rem;
     width: fit-content;   
 }
 
@@ -209,21 +254,16 @@ h3{
     background-color: #e6bd43;
     display: flex;
     flex-direction: row; 
-    justify-content: space-between; 
+    justify-content: space-between;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 3rem;
+
 }
 
 .logoabout{
     padding-bottom: 5%;
-    width: 250px;
-}
-
-.contactbutton3{
-    border: 3px solid #000;
-    background-color: #e6bd43;
-    font-size: 20px;
+    width: 260px;
+    margin: 5%;
 }
 
 .section4index{
@@ -231,21 +271,25 @@ h3{
 }
 
 .fa-solid.fa-people-line{
+    font-weight: 700;
     font-size: 40px;
     padding-top:  5%;
 }
 
 .fa-solid.fa-cloud-arrow-up{
+    font-weight: 700;
     font-size: 40px;
     padding-top: 5%;
 }
 
 .fa-solid.fa-code{
+    font-weight: 700;
     font-size: 40px;
     padding-top:5%;
 }
 
 .fa-solid.fa-wifi{
+    font-weight: 700;
     font-size: 40px;
     padding-top:5%;
 }
@@ -254,21 +298,24 @@ h3{
     background-color: #c4c2c2;
     border-radius: 0;
 }
-.signmeup{
-    background-color: #c4c2c2;
-}
 
 .buttonsignmeup{
     background-color: #e6bd43;
-    height: 55px;
+    height: 50px;
     border: none;
 }
 
 #email{
-    height: 35px;
-    width: 250px;
+    height: 30px;
+    width: 55%;
     border: none;
-    border-radius: 5%;
+}
+
+
+#branding #design #development .article {
+    flex-grow: 1;
+    max-width: 692px; 
+    box-sizing: border-box; 
 }
 
 .section2portefolio{
@@ -309,13 +356,27 @@ hr {
     margin: 20px 0; 
 }
 
-form {
+.section4about {
+    text-align: center; 
+}
+
+.flexcontainer-about4 {
+    display: flex;
+    flex-direction: column; 
+
     text-align: left;
-    background-color: #f1f1f1;
-    padding: 20px;
-    width: 400px;
-    margin: 3rem;
-    padding-top: 0;
+}
+
+.form-about {
+    width: 80%; 
+    padding-left: 3rem;
+}
+
+.service p{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-weight: 600;
+
 }
 
 label {
@@ -326,7 +387,7 @@ label {
 
 input,
 textarea {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin-bottom: 15px;
     border: none;
@@ -336,11 +397,28 @@ textarea {
 input[type="submit"] {
     width: fit-content;
     height: fit-content;
-    padding: 15px;
+    padding: 20px;
     background-color: #e6bd43;
     border: none;
     color: black;
     cursor: pointer;
+}
+
+
+.signmeup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 250px;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.sign1 {
+    width: 80%;
+    max-width: 400px;
+    background-color: #f0f0f0;
 }
 
 footer{
@@ -380,12 +458,16 @@ footer{
     border-radius: 10%;
 }
 
+.footer2 a{
+    text-decoration: none;
+}
+
 #backToTopBtn {
     display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    font-size: 30px;
+    font-size: 20px;
     background-color: black;
     color: #fff;
     border: none;
@@ -402,22 +484,65 @@ h6{
 @media only screen and (min-width: 600px) {
     #grid-container {
         grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
-        columns: 1fr 1fr 1fr;
     }
 
-    .header {
-        grid-column: 1 / span 3;
-        padding-top: 10px;
-        display: flex;
-        justify-content: center;
-    }
+    /* CSS for grid */
 
-    nav{
+    #grid-container nav {
+        width: 100%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 1rem;
+    }
+    
+    #grid-container main {
+       margin: 3rem;
+       margin-top: 0;
+    }
+    
+    #grid-container footer {
         width: 100%;
     }
 
-    body{
-        margin: 1rem;
+    /* Hover */
+
+    .listheader a:hover {
+        text-decoration: underline #e6bd43;
+    }
+
+    .buttonindex:hover{
+        background-color: #252525;
+        color: #e6bd43;
+    }
+
+    .buttonportefolio:hover{
+        background-color: #252525;
+        color: #e6bd43;
+    
+    }
+    
+    .readmore-button:hover{
+        background-color: #252525;
+        color: #e6bd43;
+    }
+    
+    .readmore-2:hover{
+        background-color: #252525;
+        color: #e6bd43;
+    
+    }
+    
+    input[type="submit"]:hover{
+        background-color: #252525;
+        color: #e6bd43;
+    }
+    
+
+    /* CSS for header & nav område */
+
+    .header {
+        padding-top: 10px;
+        display: flex;
     }
 
     .logoheader{
@@ -427,21 +552,27 @@ h6{
     }
     
     .listheader {
-        font-size: 20px;
+        font-size: 25px;
         margin: 20px;
+        margin-inline-end: 0;
         float: right;
-        padding: 10px;
         display: flex;
         flex-wrap: wrap; 
     }
 
     .contactbutton{
         font-size: 20px;
-        padding: 0;
+        padding: 7px;
+        margin-bottom: 2%;
+    }
+
+    .buttonindex{
+        padding: 10px;
+        font-weight: 500;
+        margin-bottom: 5%;
     }
 
    
-
     .contactbutton:hover {
         background-color: #252525; 
         color: #e6bd43; 
@@ -455,21 +586,54 @@ h6{
         color: black;
     }
 
+     /* CSS for main*/
+
+    h1{
+        margin-top: 10%;
+        margin-bottom: 5%;
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    h2{
+        font-size: 25px;
+        margin-top: 15%;
+        margin-bottom: 5%;
+    }
+
+    .overlay-text {
+        top: 35%;
+        left: 70%;
+        width: 85%;
+    }
+
+    .overlay-text-index{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        width: 85%;
+        transform: translate(-50%, -50%);
+        color:black;
+    }
+
+    .overlay-text-index p{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+
     .bakgrunn1{
         display: none;
     }
 
-    main{
-        grid-column: 1 / span 3;
-    }
-
     .video-containter{
         width: 100%;
-        height: 70%;
+        height: 75%;
         overflow: hidden;
     }
 
     video{
+        width: 100%;
         display: inline;
         opacity: 55%;
         overflow: hidden;
@@ -481,26 +645,32 @@ h6{
         height: auto;
         object-fit: cover; 
     }
-    
-    h1{
-        font-size: 35px;
-        font-weight: 800;
-    }
-    .overlay-text {
-        top: 35%;
-        left: 70%;
-        width: 85%;
-    }
 
+    .readmore-button{
+        background-color: #e6bd43;
+        border: none;
+        font-weight: 700;
+        padding: 15px;
+        font-size: 15px;
+        text-decoration: none;
+        color: #000;
+        width:fit-content;
+    }
+    
+
+
+    /* CSS about.html*/
     
     .overlay-text-about{
         top: 50%;
         left: 62%;
         width: 65%;
+        height: 75%;
         text-align: left;
         padding: 10px;
         padding-left: 20px;
         padding-top: 0;
+        padding-bottom: 5%;
     }
 
     .companyname{
@@ -508,11 +678,18 @@ h6{
         font-weight: 300;
     }
 
+    .overlay-text-about p{
+        margin-bottom: 4%;
+    }
+
+    .service p{
+        margin: 0;
+    }
+
     .bakgrunn3{
         width: 100%;
         height: 500px;
     }
-
 
     .flexcontainer-section3about{
         margin: 0;
@@ -522,20 +699,20 @@ h6{
         width: 175px;
         margin: 15px;
     }
-
     
     .flexcontainer-about4{
         display: flex;
         justify-content: center;
     }
 
-
     .textcontact5{
-        padding-top: 3%;
+        padding-top: 1rem;
         text-align: left;
         width: 300px;
         margin: 20px;
+        margin-top: 0;
         font-size: 20px;
+        padding-bottom: 4rem;
     }
 
     .sendusamessage{
@@ -554,13 +731,25 @@ h6{
         color: #e6bd43; 
     }
 
-    .section2index{
-        margin-top: -120px;
+    .section2about{ 
+        padding: 0;
     }
 
-    h2{
-        font-size: 30px;
-        margin-bottom: 5%;
+    .buttonsignmeup{
+        background-color: #e6bd43;
+        height: 55px;
+        border: none;
+    }
+
+    .buttonsignmeup:hover {
+        background-color: #252525; 
+        color: #e6bd43; 
+    }
+
+    .section2index{
+        margin: 5;
+        margin-top: -120px;
+        padding-bottom: 5%;
     }
 
     .section3index{
@@ -576,18 +765,15 @@ h6{
     
     }
 
-    .placeholder{
-        flex-grow: 1;
-        width: 30%;
-        max-width: 110%;
-    }
     .section4index {
-        padding: 20px;
         text-align: center;
+        margin: 5px;
+        padding: 0;
     }
     
     h3 {
-        margin-bottom: 20px;
+        font-size: 30px;
+        padding: 2%;
     }
     
     .service-container {
@@ -595,6 +781,12 @@ h6{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    element.service{
+        margin: 5px;
     }
     
     .service {
@@ -605,47 +797,51 @@ h6{
     }
 
     .fa-solid.fa-people-line{
-        font-size: 30px;
+        font-size: 25px;
         padding-top:  5%;
     }
     
     .fa-solid.fa-cloud-arrow-up{
-        font-size: 40px;
+        font-size: 25px;
         padding-top: 5%;
     }
     
     .fa-solid.fa-code{
-        font-size: 30px;
+        font-size: 25px;
         padding-top:5%;
     }
     
     .fa-solid.fa-wifi{
-        font-size: 30px;
+        font-size: 25px;
         padding-top:5%;
     }
 
+    .section4about {
+        text-align: center;
+    }
     
-    .buttonsignmeup{
-        background-color: #e6bd43;
-        height: 55px;
-        border: none;
+    .flexcontainer-about4 {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center; 
+    }
+    
+    .form-about {
+        text-align: left;
+        width: 40%; 
+        padding: 1rem;
     }
 
-    .buttonsignmeup:hover {
-        background-color: #252525; 
-        color: #e6bd43; 
+    .textcontact5{
+        padding-bottom: 6.5rem;
     }
     
-    #email{
-        height: 35px;
-        width: 300px;
-        border: none;
-        border-radius: 0;
-    }
+
+    /* CSS products.html*/
 
     .buttonportefolio{
         border: 2px solid #000;
-        font-size: 20px;
+        font-size: 15px;
         margin: 0;
         margin-right: 10px;
         background-color: #fff;
@@ -664,33 +860,38 @@ h6{
         color:black;
     }
 
-    .overlay-text-index{
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color:black;
-    }
-
     .section2portefolio{
         margin: 0;
+    }
+
+    .portefoliopic4{
+        flex-grow: 1;
+        max-width: 692px;
+        width: 400px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .portefoliopic5{
+        flex-grow: 1;
+        max-width: 692px;
+        width: 300px;
+        transition: transform 0.3s ease-in-out;
     }
 
     .portefolioflex{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .portefolioflex2{
         display: flex;
-        justify-content: space-between
-       }
-
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
     .portefoliopic1{
-        flex-grow: 1;
-        max-width: 692px; 
-        width:95%;
+        width: 250px;
         transition: transform 0.3s ease-in-out;
     }
 
@@ -698,14 +899,11 @@ h6{
         transform: scale(1.1); 
     }
 
-    .portefoliopic4{
-        flex-grow: 1;
-        max-width: 692px;
-        width: 35%;
-        transition: transform 0.3s ease-in-out;
-
-    }
     .portefoliopic4:hover {
+        transform: scale(1.1); 
+    }
+
+    .portefoliopic5:hover {
         transform: scale(1.1); 
     }
 
@@ -718,24 +916,12 @@ h6{
         text-align: start;
     }
 
-    .portefoliopic5{
-        flex-grow: 1;
-        max-width: 120%;
-        width: 90%;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .portefoliopic5:hover {
-        transform: scale(1.1); 
-    }
-
     iframe{
         width: 100%;
     }
 
 
     footer{
-        grid-column: 1 / span 3;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -758,24 +944,64 @@ h6{
         padding-left: 30px;
     }
     
+    .fa-brands.fa-square-facebook{
+        font-size: 20px;
+    }
+    
+    .fa-brands.fa-instagram{
+        font-size: 20px;
+    }
+    
+    .fa-brands.fa-linkedin-in{
+        font-size: 20px;
+    }
 }
 
 @media only screen and (min-width: 800px) {
     #grid-container {
         grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
-        columns: 1fr 1fr 1fr;
     }
 
     h1{
-        font-size: 45px;
+        font-size: 35px;
+        margin-top: 5%;
+        margin-bottom: 0;
+    }
+
+    #exploreHeading{
+        font-size: 30px;
     }
 
     .overlay-text-index p{
         font-size: 20px;
+        width: 100%;
+    }
+
+    .overlay-text-about{
+        padding-bottom: 5%;
+        height: fit-content;
+    }
+
+    h2{
+        margin: 0;
+        font-size: 25px;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+
+    .video-containter{
+        height: 70%;
+    }
+
+    p{
+        font-size: 20px;
     }
 
     .section2index h2{
-        font-size: 35px;
+        font-size: 30px;
+        margin-top: 5%;
     }
 
     .section2index p{
@@ -790,36 +1016,242 @@ h6{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     
 
     form.sign1{
         display: flex;
-        width: 90%;
+        width: 80%;
         justify-content: center;
     }
 
     #email{
         height: 35px;
-        width: 600px;
+        width: 400px;
         border: none;
         border-radius: 0;
     }
 
-    .portefolioflex2{
-        justify-content: space-between;
+    form{
+        width: 400px;
+        
     }
 
-    .portefoliopic5{
-        flex-grow: 1;
-        max-width: 692px;
-        width: 500px;
-        transition: transform 0.3s ease-in-out;
+    .overlay-text-portofolio{
+        font-size: 45px;
+    }
+
+    .section2portefolio{
+        margin-top: 5%;
+    }
+
+    .buttonportefolio{
+        margin-top: 5%;
+        font-size: 20px;
+    }
+    
+    h4{
+        font-size: 20px;
+    }
+   
+    .companyname{
+        margin-top: 5%;
+        margin-bottom: 5%;
         
     }
     
-   
+    .overlay-text-about{
+       width: 70%;
+    }
+
+    .contactbutton2{
+        margin-bottom: 10%;
+    }
+
+    .portefoliopic5{
+        width: 400px;
+    }
 
    
 }
+
+
+@media only screen and (min-width: 1024px) {
+    #grid-container {
+        grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
+    }
+
+    h1{
+        font-size: 45px;
+        margin-top: 10%;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    .overlay-text-about{
+        width: 60%;
+        padding-right: 5%;
+    }
+
+    .overlay-text-about p{
+        margin-bottom: 5%;
+        
+    }
+
+    .overlay-text-index p{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .contactbutton2{
+        font-size: 20px;
+    }
+
+
+    .section2index h2{
+        font-size: 30px;
+    }
+
+    .section2index p{
+        font-size: 20px;
+    }
+
+    .fa-solid.fa-people-line{
+        font-size: 30px;
+        padding-top:  5%;
+    }
+    
+    .fa-solid.fa-cloud-arrow-up{
+        font-size: 30px;
+        padding-top: 5%;
+    }
+
+    .fa-solid.fa-code{
+        font-size: 30px;
+        padding-top:5%;
+    }
+    
+    .fa-solid.fa-wifi{
+        font-size: 30px;
+        padding-top:5%;
+    }
+
+    .portefolioflex{
+        flex-wrap: nowrap;
+    }
+
+    .portefoliopic1{
+        width: 300px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+    #grid-container {
+        grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
+    }
+
+    h1{
+        font-size: 50px;
+        margin-top: 10%;
+    }
+
+    h2{
+        font-size: 45px;
+    }
+
+    h3{
+        font-size: 30px;
+    }
+
+    #exploreHeading{
+        font-size: 35px;
+    }
+
+   .section2index{
+    margin-top: -200px;
+   }
+
+   .section3text p{
+    font-size: 20px;
+   }
+
+    .overlay-text-about{
+        width: 60%;
+    }
+
+    .overlay-text-about p{
+        font-size: 20px;
+        margin-bottom: 5%;
+    }
+
+    .overlay-text-index p{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .contactbutton2{
+        font-size: 20px;
+    }
+
+    .section2index h2{
+        font-size: 35px;
+    }
+
+    .section2index p{
+        font-size: 20px;
+    }
+
+    .fa-solid.fa-people-line{
+        font-size: 30px;
+        padding-top:  5%;
+    }
+    
+    .fa-solid.fa-cloud-arrow-up{
+        font-size: 30px;
+        padding-top: 5%;
+    }
+    
+    .fa-solid.fa-code{
+        font-size: 30px;
+        padding-top:5%;
+    }
+    
+    .fa-solid.fa-wifi{
+        font-size: 30px;
+        padding-top:5%;
+    }
+
+    form{
+        width: 500px;
+    }
+
+    .textcontact5{
+        width: 50%;
+    }
+
+    .portefoliopic5{
+        width: 550px;
+    }
+
+    .portefoliopic1{
+        width: 375px;
+    }
+
+    .portefoliopic4{
+        width: 475px;
+    }
+
+    .portefolioflex{
+        flex-wrap: nowrap;
+    }
+
+
+}
+
+
+

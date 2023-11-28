@@ -1,129 +1,190 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="zxx" >
     <head>
+        <!-- Basic meta -->
         <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <meta name="description" content="">
-         <link rel="stylesheet" href="css/style.css" type="text/css">
-         <script src="https://kit.fontawesome.com/c6b659b1d7.js" crossorigin="anonymous"></script>
-         <title>Index</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Get help with webdesign here!">
+        <meta name="author" content="Daniella Dominey">
+        <meta name="keywords" content="IT, Webdesign, IT-services, IT hjelp">
+        <meta name="robots" content="index, follow">
+        
+        <!-- Open Graph tags for Facebook and Instagram -->
+        <meta property="og:title" content="DaniellasWebdesign">
+        <meta property="og:description" content="Get help with webdesign here!">
+        <meta property="og:image" content="url-to-your-thumbnail-image.jpg">
+        <meta property="og:url" content="https://daniellaswebdesign.com">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="nb_NO">
+    
+        <!-- LinkedIn meta tags -->
+        <meta property="title" content="Homepage">
+        <meta property="description" content="Get help with webdesign here!">
+        <meta property="image" content="url-to-your-thumbnail-image.jpg">
+        <meta property="url" content="https://daniellaswebdesign.com">
+        <meta property="type" content="website">
+        <meta property="locale" content="nb_NO">
+        <meta property="site_name" content="DaniellasWebdesign">
+
+       
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <script src="https://kit.fontawesome.com/c6b659b1d7.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="img/favicon.ico.png" type="image/x-icon">
+        <link rel="shortcut icon" href="img/favicon.ico.png" type="image/x-icon">
+        <title>danielladomineyswebsite</title>
     </head>
 
-
+    
     <body>
-      <div id="grid-container">
-          
-        <header>
+        <!-- Brukt denne linken som hjelpemiddel til microdata.https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data --> 
+
+        <div itemscope itemtype="https://schema.org/AggregateRating" id="divhide">
+            <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/LocalBusiness">
+              <img itemprop="image" src="https://example.com/photos/1x1/webpagename.jpg" alt="MyWebPage"/>
+              <span itemprop="name">Webpage</span>
+              <span itemprop="telephone">1234567</span>
+              <span itemprop="address">Braveien 4</span>
+            </div>
+            <span itemprop="ratingValue">4.2</span> out of <span itemprop="bestRating">5</span> stars -
+            <span itemprop="ratingCount">123</span> votes
+          </div>
+
+
+        <!-- HEADER -->
+
+        <div id="grid-container">
+            <header>
             <nav>
                 <section>
                     <article>
-                     <a href="index.html"><img src="img/logo1.png" class="logoheader" alt="logo"></a>  
+                     <a href="index.html" tabindex="1">
+                        <img src="img/logo1.png" class="logoheader" alt="logo"></a>  
                     </article>
                 </section>
 
-                <section class="listheader">
-                    <a href="index.html">Home</a>
-                    <a href="products.html">Portfolio</a> 
-                    <a href="about.html">About</a> 
-                    <a href="about.html" class="contactbutton">Contact</a>
+                <section class="listheader"  role="navigation">
+                    <a href="index.html" class="active" aria-label="Home" tabindex="2">Home</a>
+                    <a href="products.html" aria-label="Portfolio" tabindex="3">Portfolio</a> 
+                    <a href="about.html" aria-label="About" tabindex="4">About</a> 
+                    <a href="about.html#contact" class="contactbutton" aria-label="Contact" tabindex="5">Contact</a>
             </section>
             </nav>
         </header>
 
+
+        <!-- MAIN -->
+        <!-- Kilde til bilde som er brukt i main section 1: https://images.pexels.com/photos/234527/pexels-photo-234527.jpeg?cs=srgb&dl=pexels-j%C3%A9shoots-234527.jpg&fm=jpg&h=975&w=1550&fit=crop&_gl=1*1p7j74s*_ga*OTUwNDQ2MTExLjE3MDA2NzUxNTc.*_ga_8JE65Q40S6*MTcwMDY3NTE1OC4xLjEuMTcwMDY3NTMxNi4wLjAuMA.. \-->
+
         <main>
-            <section class="section1index">
+            <section class="section1index" aria-labelledby="compellingHeadline">
                 <img class="bakgrunn1" src="img/pexels-photo-234527.jpeg" alt="foto">
                 <div class="video-containter">
-                <video width="100%" autoplay loop muted>
+                <video autoplay loop muted>
                     <source src="img/mountains.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
 
-
                 <section class="overlay-text-index">
-                    <h1>Compeling headline</h1>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                    <button class="contactbutton2">Read more about our services</button>
-             </section>
+                    <h1 id="compellingHeadline">Compeling headline</h1>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    <a href="#service" class="readmore-button" aria-label="Read more about our services">Read more about our services</a>
+                </section>
+            </section>
+                
+            <section class="section2index" aria-labelledby="engagingSubheading">
+                <h2 id="engagingSubheading">Engaging subheading. What can you help your visitors with</h2>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
             </section>
 
-            <section class="section2index">
-                <h2>Engaging subheading. What can you help your visitors with</h2>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-            </section>
-
-            <section class="section3index">
+            <section class="section3index" aria-labelledby="aboutCompanyHeading">
                 <img class="placeholder" src="img/400x400.svg" alt="placeholder">
                 <section class="section3text">
-                <h3>About Our Company</h3>
-                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
-                <a href="#branding" class="buttonindex">Read more about us</a>
+                <h3 id="aboutCompanyHeading">About Our Company</h3>
+                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum.</p>
+                <a href="about.html" class="buttonindex" aria-label="Read more about us">Read more about us</a>
             </section>
             </section>
 
-            <section class="section4index">
-             <h3>Our Services</h3>
+            <section class="section4index" aria-labelledby="ourServicesHeading" id="service">
+             <h3 id="ourServicesHeading">Our Services</h3>
 
-            
                 <section class="service-container">
-                    <element class="service">
-                    <i class="fa-solid fa-people-line" style="color: #000000;"></i>
-                    <h4>Branding</h5>
-                    <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
-                </element>
+                    <article class="service">
+                        <i class="fa-solid fa-people-line" style="color: #000000;"></i>
+                        <h4>Branding</h4>
+                            <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+                    </article>
 
-                <element class="service">
-                    <i class="fa-solid fa-cloud-arrow-up" style="color: #000000;"></i>
-                    <h4>Branding</h5>
-                    <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
-                </element>
+                    <article class="service">
+                        <i class="fa-solid fa-cloud-arrow-up" style="color: #000000;"></i>
+                        <h4>Branding</h4>
+                            <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+                    </article>
 
-                <element class="service">
-                    <i class="fa-solid fa-code" style="color: #000000;"></i>
-                    <h4>Branding</h5>
-                    <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
-                </element>
+                    <article class="service">
+                        <i class="fa-solid fa-code" style="color: #000000;"></i>
+                        <h4>Branding</h4>
+                            <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+                    </article>
 
 
-                <element class="service">
-                    <i class="fa-solid fa-wifi" style="color: #000000;"></i>
-                    <h4>Branding</h5>
-                    <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
-                </element>
-             </section>
+                    <article class="service">
+                        <i class="fa-solid fa-wifi" style="color: #000000;"></i>
+                        <h4>Branding</h4>
+                            <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+                    </article>
+                </section>
 
             </section>
-
 
             <section class="signmeup">
-                <h3>Sign up for our newsletter</h3>
+                <h3 id="newsletterHeading">Sign up for our newsletter</h3>
                 <form class="sign1">
-                <label for="email"></label>
-                <input type="email" id="email" name="email" required>
-        
-                <button type="submit" class="buttonsignmeup">Sign me up!</button>
-            </form>
+                    <label for="email" id="emailLabel" aria-label="Email"></label>
+                    <input type="email" id="email" name="email" required aria-labelledby="emailLabel"
+                        aria-placeholder="Enter your email" tabindex="6">
+                    <button type="submit" class="buttonsignmeup" aria-label="Sign me up" tabindex="7">Sign me up!</button>
+                </form>
          </section>
-
         </main>
 
+        <!-- FOOTER -->
+
         <footer>
-            <section class="footer1">
+            <section class="footer1" role="contentinfo">
                 <article>
                     <img class="footerlogo" src="img/logo1.png" alt="logo">
                 </article>
             </section>
+
             <h6>Companyrights Companyname 2023</h6>
+            
             <section class="footer2">
-                <i class="fa-brands fa-square-facebook" style="color: #0a0a0a;"></i>
-                <i class="fa-brands fa-instagram" style="color: #000000;"></i>
-                <i class="fa-brands fa-linkedin-in" style="color: #000000;"></i>
+                <a href="https://www.facebook.com/yourFacebookPage" target="_blank" aria-label="Facebook">
+                    <i class="fa-brands fa-square-facebook" style="color: #0a0a0a;"></i>
+                </a>
+                
+                <a href="https://www.instagram.com/yourInstagramUsername" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram" style="color: #000000;"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/yourLinkedInUsername" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in" style="color: #000000;"></i>
+                </a>
             </section>
         </footer>
-
         <button id="backToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i></button>
 
+
+
+    <!--SCRIPT-->
+    <!-- Brukt ChatGPT til å finne ut hvordan man til scroll knapp https://chat.openai.com/ -->
+
+    
     <script>
         
         function scrollToTop() {
@@ -147,7 +208,7 @@
         }
     </script>
 
-      </div>
+    </div>
     </body>
 
 

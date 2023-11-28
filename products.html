@@ -1,125 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <link rel="stylesheet" href="css/style.css" type="text/css">
-        <script src="https://kit.fontawesome.com/c6b659b1d7.js" crossorigin="anonymous"></script>
-        <title>Portefolio</title>
+    <!-- Basic meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Take a look at my portefolio and get your ideas here.">
+    <meta name="author" content="Daniella Dominey">
+    <meta name="keywords" content="Portefolio, products, sale, IT, services, offer">
+    <meta name="robots" content="products, follow">
+    
+    <!-- Open Graph tags for Facebook and Instagram -->
+    <meta property="og:title" content="My portefolio">
+    <meta property="og:description" content="Take a look at my portefolio and get your ideas here.">
+    <meta property="og:image" content="url-to-your-thumbnail-image.jpg">
+    <meta property="og:url" content="https://daniellaswebdesign/portefolio.com">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="nb_NO">
+
+    <!-- LinkedIn meta tags -->
+    <meta property="title" content="My portefolio">
+    <meta property="description" content="Take a look at my portefolio and get your ideas here.">
+    <meta property="image" content="url-to-your-thumbnail-image.jpg">
+    <meta property="url" content="https://daniellaswebdesign/portefolio.com">
+    <meta property="type" content="website">
+    <meta property="locale" content="nb_NO">
+    <meta property="site_name" content="DaniellasWebdesign/portefolio">
+
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/c6b659b1d7.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/favicon.ico.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico.png" type="image/x-icon">
+    <title>DaniellasWebdesign/portefolio</title>
     </head>
 
     <body>
+
       <div id="grid-container">
-          
+
+        <!-- HEADER -->
+
         <header>
             <nav>
                 <section>
                     <article>
-                     <a href="index.html"><img src="img/logo1.png" class="logoheader" alt="logo"></a>  
+                        <a href="index.html" tabindex="1" title="Go to Home"><img src="img/logo1.png" class="logoheader" alt="logo"></a>
                     </article>
                 </section>
 
-                <section class="listheader">
-                        <a href="index.html">Home</a>
-                        <a href="products.html" class="active">Portfolio</a> 
-                        <a href="about.html">About</a> 
-                        <a href="about.html" class="contactbutton">Contact</a>
+                <section class="listheader" role="navigation">
+                    <a href="index.html" tabindex="2" aria-label="Home">Home</a>
+                    <a href="products.html" class="active" tabindex="3" aria-label="Portfolio">Portfolio</a>
+                    <a href="about.html" tabindex="4" aria-label="About">About</a>
+                    <a href="#contact" class="contactbutton" tabindex="5" aria-label="Contact">Contact</a>
                 </section>
             </nav>
         </header>
 
+        <!-- MAIN -->
+        <!-- Kilde til bilde som er brukt i main section 1: https://images.pexels.com/photos/234527/pexels-photo-234527.jpeg?cs=srgb&dl=pexels-j%C3%A9shoots-234527.jpg&fm=jpg&h=975&w=1550&fit=crop&_gl=1*1p7j74s*_ga*OTUwNDQ2MTExLjE3MDA2NzUxNTc.*_ga_8JE65Q40S6*MTcwMDY3NTE1OC4xLjEuMTcwMDY3NTMxNi4wLjAuMA.. \-->
+
         <main class="mainproducts">
-            <section class="section1index">
+          
+            <section class="section1index" aria-labelledby="portfolioHeading">
                 <img class="bakgrunn2" src="img/pexels-photo-234527.jpeg" alt="foto">
                 <section class="overlay-text-portofolio">
-                <h1>Portefolio</h1>
-             </section>
-            </section>
-
-            <section class="section2portefolio">
-                <h2>Explore previous jobs</h2>
-                <hr class="hryellow">
-                <a href="#branding" class="buttonportefolio">Branding</a>
-                <a href="#design" class="buttonportefolio">Design</a>
-                <a href="#development" class="buttonportefolio">Development</a>
-            </section>
-
-            <section class="section2portefolio" id="branding">
-                <h3>Branding</h3>
-                <hr>
-                <section class="portefolioflex">
-                <article>
-                    <img src="img/400x400.svg" class="portefoliopic1" alt="placeholder">
-                    <h4 class="portefolioh4">Et harum quidem</h4>
-                </article>
-                <article>
-                    <img src="img/400x400.svg" class="portefoliopic1" alt="placeholder">
-                    <h4 class="portefolioh4">Et harum quidem</h4>
-                </article>
-                <article>
-                    <img src="img/400x400.svg" class="portefoliopic1" alt="placeholder">
-                    <h4 class="portefolioh4">Et harum quidem</h4>
-                </article>
-                </section>
-
-                <article>
-                    <img src="img/400x400.svg" class="portefoliopic4" alt="placeholder">
-                    <h4 class="portefolioh4">Et harum quidem</h4>
-                </article>
-
-            </section>
-
-            <section class="section3portefolio" id="design">
-                <h3>Design</h3>
-                <hr>
-                <section class="portefolioflex">
-                <article>
-                    <img src="img/400x400.svg" class="portefoliopic1" alt="placeholder">
-                    <h4 class="portefolioh4">Et harum quidem</h4>
-                </article>
-                <article>
-                    <img src="img/400x400.svg" class="portefoliopic1" alt="placeholder">
-                    <h4 class="portefolioh4">Et harum quidem</h4>
-                </article>
-                <article>
-                    <img src="img/400x400.svg" class="portefoliopic1" alt="placeholder">
-                    <h4 class="portefolioh4">Et harum quidem</h4>
-                </article>
+                    <h1 id="portfolioHeading">Portfolio</h1>
                 </section>
             </section>
+            
+            <div itemscope itemtype="https://schema.org/Product">
+                <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="price" content="1099">
+                    <meta itemprop="priceCurrency" content="NOK">
+                </div>
 
-            <section class="section4portefolio" id="development">
-                <h3>Development</h3>
-                <hr>
-                <section class="portefolioflex2">
-                <article>
-                    <img src="img/400x400.svg" class="portefoliopic5" alt="placeholder">
-                    <h4 class="portefolioh4">Et harum quidem</h4>
-                </article>
-                <article>
-                    <img src="img/400x400.svg" class="portefoliopic5" alt="placeholder">
-                    <h4 class="portefolioh4">Et harum quidem</h4>
-                </article>
+                <section class="section2portefolio" role="region" aria-labelledby="exploreHeading">
+                    <h2 id="exploreHeading">Explore previous jobs</h2>
+                    <hr class="hryellow">
+                    <a href="#branding" class="buttonportefolio" tabindex="6" aria-label="Explore Branding">Branding</a>
+                    <a href="#design" class="buttonportefolio" tabindex="7" aria-label="Explore Design">Design</a>
+                    <a href="#development" class="buttonportefolio" tabindex="8" aria-label="Explore Development">Development</a>
                 </section>
-            </section>
+    
+               <section class="section2portefolio" id="branding" aria-labelledby="brandingHeading">
+                    <h3 id="brandingHeading">Branding</h3>
+                    <hr>
+                    <section class="portefolioflex">
+                        <article>
+                            <img src="img/400x400.svg" class="portefoliopic1" alt="placeholder" itemprop="image">
+                            <h4 class="portefolioh4" itemprop="name">Et harum quidem</h4>
+                        </article>
+                        <article>
+                            <img src="img/400x400.svg" class="portefoliopic1" alt="placeholder" itemprop="image">
+                            <h4 class="portefolioh4" itemprop="name">Et harum quidem</h4>
+                        </article>
+                        <article>
+                            <img src="img/400x400.svg" class="portefoliopic1" alt="placeholder" itemprop="image">
+                            <h4 class="portefolioh4" itemprop="name">Et harum quidem</h4>
+                        </article>
+                    </section>
+    
+                    <article>
+                        <img src="img/400x400.svg" class="portefoliopic4" alt="placeholder">
+                        <h4 class="portefolioh4">Et harum quidem</h4>
+                    </article>
+    
+                </section>
+    
+                <section class="section3portefolio" id="design" aria-labelledby="designHeading">
+                    <h3 id="designHeading">Design</h3>
+                    <hr>
+                    <section class="portefolioflex">
+                        <article>
+                            <img src="img/400x400.svg" class="portefoliopic1" alt="placeholder">
+                            <h4 class="portefolioh4">Et harum quidem</h4>
+                        </article>
+                        <article>
+                            <img src="img/400x400.svg" class="portefoliopic1" alt="placeholder">
+                            <h4 class="portefolioh4">Et harum quidem</h4>
+                        </article>
+                        <article>
+                            <img src="img/400x400.svg" class="portefoliopic1" alt="placeholder">
+                            <h4 class="portefolioh4">Et harum quidem</h4>
+                        </article>
+                    </section>
+                </section>
+    
+                <section class="section4portefolio" id="development" aria-labelledby="developmentHeading">
+                    <h3 id="developmentHeading">Development</h3>
+                    <hr>
+                    <section class="portefolioflex2">
+                        <article>
+                            <img src="img/400x400.svg" class="portefoliopic5" alt="placeholder">
+                            <h4 class="portefolioh4">Et harum quidem</h4>
+                        </article>
+                        <article>
+                            <img src="img/400x400.svg" class="portefoliopic5" alt="placeholder">
+                            <h4 class="portefolioh4">Et harum quidem</h4>
+                        </article>
+                    </section>
+                </section>
+            </div>
         </main>
+        
+       <!-- FOOTER -->
 
         <footer>
-            <section class="footer1">
+            <section class="footer1" role="contentinfo">
                 <article>
                     <img class="footerlogo" src="img/logo1.png" alt="logo">
                 </article>
             </section>
+
             <h6>Companyrights Companyname 2023</h6>
+            
             <section class="footer2">
-                <i class="fa-brands fa-square-facebook" style="color: #0a0a0a;"></i>
-                <i class="fa-brands fa-instagram" style="color: #000000;"></i>
-                <i class="fa-brands fa-linkedin-in" style="color: #000000;"></i>
+                <a href="https://www.facebook.com/yourFacebookPage" target="_blank" aria-label="Facebook">
+                    <i class="fa-brands fa-square-facebook" style="color: #0a0a0a;"></i>
+                </a>
+                
+                <a href="https://www.instagram.com/yourInstagramUsername" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram" style="color: #000000;"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/yourLinkedInUsername" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in" style="color: #000000;"></i>
+                </a>
             </section>
         </footer>
 
         <button id="backToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i></button>
+
+        <!--SCRIPT-->
+        <!-- Brukt ChatGPT til å finne ut hvordan man til scroll knapp https://chat.openai.com/ -->
 
         <script>
             
