@@ -10,23 +10,14 @@
         <meta name="keywords" content="About, contact, info, webdesign, portefolio">
         <meta name="robots" content="about, follow">
         
-        <!-- Open Graph tags for Facebook and Instagram -->
+        <!-- Open Graph tags for Facebook and Instagram og LinkedIn-->
         <meta property="og:title" content="Contact details">
         <meta property="og:description" content="Contact me for help with your webdesign today!">
         <meta property="og:image" content="url-to-your-thumbnail-image.jpg">
         <meta property="og:url" content="https://daniellaswebdesign/about.com">
         <meta property="og:type" content="website">
         <meta property="og:locale" content="nb_NO">
-    
-        <!-- LinkedIn meta tags -->
-        <meta property="title" content="Contact details">
-        <meta property="description" content="Contact me for help with your webdesign today! ">
-        <meta property="image" content="url-to-your-thumbnail-image.jpg">
-        <meta property="url" content="https://daniellaswebdesign/about.com">
-        <meta property="type" content="website">
-        <meta property="locale" content="nb_NO">
-        <meta property="site_name" content="DaniellasWebdesign/about">
-    
+
        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,6 +53,7 @@
 
         <!-- MAIN -->
         <!-- Kilde til bilde som er brukt i main section 1: https://images.pexels.com/photos/234527/pexels-photo-234527.jpeg?cs=srgb&dl=pexels-j%C3%A9shoots-234527.jpg&fm=jpg&h=975&w=1550&fit=crop&_gl=1*1p7j74s*_ga*OTUwNDQ2MTExLjE3MDA2NzUxNTc.*_ga_8JE65Q40S6*MTcwMDY3NTE1OC4xLjEuMTcwMDY3NTMxNi4wLjAuMA.. \-->
+        <!-- Kilde til lorem ipsum https://loremipsum.io/generator/-->
         
         <main>
             <div itemscope itemtype="https://schema.org/LocalBusiness">
@@ -137,13 +129,13 @@
                             <form action="process_form.php" method="post" class="form-about">
                                 <h4 class="sendusamessage">Send us a message</h4>
                                 <label for="name">Name:</label>
-                                <input type="text" id="name" name="name" required tabindex="7">
+                                <input type="text" placeholder="example: Ola Nordmann" id="name" name="name" required tabindex="7">
         
                                 <label for="subject">Subject:</label>
-                                <input type="text" id="subject" name="subject" required tabindex="8">
+                                <input type="text" placeholder="example: Help with webdesign "id="subject" name="subject" required tabindex="8">
         
                                 <label for="message">Message:</label>
-                                <textarea id="message" name="message" rows="4" required tabindex="9"></textarea>
+                                <textarea id="message" placeholder="example: Hi! I need help with my" name="message" rows="4" required tabindex="9"></textarea>
         
                                 <input type="submit" value="Send message">
                             </form>
@@ -196,7 +188,7 @@
 
         <!--SCRIPT-->
         <!-- Brukt ChatGPT til å finne ut hvordan man til scroll knapp https://chat.openai.com/ -->
-        
+
         <script>
             
             function scrollToTop() {
